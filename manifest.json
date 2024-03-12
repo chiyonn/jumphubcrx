@@ -1,0 +1,14 @@
+{
+  "name": "my-new-tab-page",
+  "manifest_version": 2,
+  "description": "My new tab page.",
+  "version": "0.0.3",
+  "permissions": ["management", "bookmarks"],
+  "chrome_url_overrides": {
+    "newtab": "newtab/newtab.html"
+  },
+  "web_accessible_resources": [
+    "assets/photos/*"
+  ]
+}
+

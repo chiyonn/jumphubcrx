@@ -1,0 +1,106 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.layout {
+  display: flex;
+  gap: 12px;
+  padding: 24px;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+aside {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, .6);
+  border: 1px solid gray;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 6px 6px 9px rgba(0, 0, 0, .4);
+}
+
+#bmw {
+  background-image: url('https://wallpapers.com/images/featured/1920x1080-bmw-k85uw5ar84mfsbem.jpg');
+  background-size: cover;
+  background-position: center;
+}
+#datetime {
+  padding: 24px;
+  height: 100%;
+  min-width: 250px;
+  font-weight: bold;
+}
+#time {
+  font-size: 50px;
+}
+#date {
+  font-size: 25px;
+}
+
+#bookmarks {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+}
+#bookmarks > div.category {
+  display: grid;
+  grid-template-columns: repeat(5, 80px);
+  padding: 6px;
+}
+#bookmarks > div.category:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
+.bookmark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 6px;
+  border-radius: 4px;
+  text-align: center;
+}
+.bookmark:hover {
+  background-color: rgba(255, 255, 255, .2);
+}
+.bookmark img {
+  width: 32px;
+  height: 32px;
+}
+
+#trading-hours table {
+  font-size: 15px;
+  border-collapse: collapse;
+}
+#trading-hours th,
+#trading-hours td {
+  min-width: 22px;
+  height: 22px;
+  padding: 2px;
+  white-space: nowrap;
+}
+#trading-hours td.open {
+  background-color: rgba(125, 255, 125, .3);
+}
+#trading-hours td.now {
+  background-color: rgba(125, 255, 125, 1.0);
+}
+
+.album {
+  width: 50%;
+  border: 12px solid white;
+  border-bottom: 48px solid white;
+}

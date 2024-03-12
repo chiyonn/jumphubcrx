@@ -1,0 +1,42 @@
+<!-- newtab/newtab.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Tab</title>
+  <link rel="stylesheet" type="text/css" href="../styles/index.css">
+  <link rel="stylesheet" type="text/css" href="newtab.css">
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="left">
+      <div class="card" id="bmw">
+        <div id="datetime">
+          <p id="time"></p>
+          <p id="date"></p>
+        </div>
+      </div>
+      <div class="card">
+        <section id="bookmarks"></section>
+      </div>
+    </aside>
+
+    <main>
+      <div class="card" id="trading-hours"></div>
+    </main>
+
+    <aside class="right">
+      <div class="card" id="spreadsheets"></div>
+    </aside>
+  </div>
+
+  <script src="clock.js"></script>
+  <script src="bookmarks.js"></script>
+  <script src="trade-hours.js"></script>
+</body>
+
+</html>
+
